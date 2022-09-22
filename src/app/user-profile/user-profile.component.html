@@ -1,0 +1,38 @@
+<div fxLayoutGap="20px" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+    <mat-card fxFlexOffset.gt-sm="100px" fxFlex.gt-sm="20%" fxFlex.lt-md="100%" fxLayout="column"
+        fxLayoutAlign="none center">
+        <div>
+            <img mat-card-sm-image src="../../assets/profile.png" alt="Profile Photo">
+        </div>
+        <mat-card-title>Jone Smith</mat-card-title>
+        <mat-card-subtitle>CFA, CIC</mat-card-subtitle>
+        <mat-card-title class="center membership"><span>👑</span> Premium member</mat-card-title>
+        <mat-card-content fxlayout="row" fxLayoutAlign="center">
+            <mat-icon>school</mat-icon>
+            <p>Insurance Agent, Attorney</p>
+        </mat-card-content>
+        <mat-divider inset></mat-divider>
+        <mat-card-actions>
+            <button mat-button color="warn">
+                <mat-icon>email</mat-icon>Send an Email
+            </button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card fxFlex.gt-sm="65%" fxFlex.lt-md="100%" class="card-2">
+        <p class="details-header"><b>Business Details</b></p>
+        <div class="container">
+            <div fxLayout="row">
+                <div fxLayout="row" fxLayoutAlign="none center" fxFlex.gt-sm="80%" fxFlex.lt-md="60%">
+                    <mat-icon>person</mat-icon>
+                    <strong>Profile</strong>
+                </div>
+                <button (click)="openDialog()" mat-raised-button color="warn">Edit Profile</button>
+            </div>
+            <mat-divider inset></mat-divider>
+            <div *ngFor="let user of userDetails" fxLayout="row">
+                <mat-list-item fxFlex="50%"><strong>{{user.label}}</strong></mat-list-item>
+                <mat-list-item>{{user.value}}</mat-list-item>
+            </div>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,46 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="none center">
+    <div fxFlex.gt-sm="70%" fxFlex.lt-md="60%" fxLayout="row" fxLayoutGap="10">
+        <img src="../../assets/company_logo.png" height="40px" alt="company logo" class="col">
+        <button fxHide.lt-md mat-flat-button aria-label="icon-button with home icon">
+            <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
+            <mat-label>Home</mat-label>
+        </button>
+        <button fxHide.lt-md mat-flat-button aria-label="icon-button with people icon">
+            <mat-icon aria-hidden="false" aria-label="people icon">people</mat-icon><span>Trustees</span>
+        </button>
+        <button fxHide.lt-md mat-flat-button aria-label="icon-button with person icon">
+            <mat-icon aria-hidden="false" aria-label="person icon">person</mat-icon><span>Professionals</span>
+        </button>
+        <button fxHide.lt-md mat-flat-button aria-label="icon-button with more icon">
+            <mat-icon aria-hidden="false" aria-label="more icon">more_horiz</mat-icon><span>More</span>
+        </button>
+    </div>
+    <div fxFlex.gt-sm="30%" fxLayout="row" fxLayoutAlign="none center">
+        <button fxHide.lt-md mat-flat-button aria-label="icon-button with search icon">
+            <mat-icon aria-hidden="false" aria-label="people icon">search</mat-icon>
+        </button>
+        <button mat-raised-button color="warn">
+            <mat-icon inline="true" aria-hidden="false" aria-label="email icon">email</mat-icon><span>Invite</span>
+        </button>
+        <img fxFlexOffset="10px" src="../../assets/profile.png" height="30px" alt="company logo">
+    </div>
+</mat-toolbar>
+<mat-toolbar fxHide.gt-sm fxLayout="row" fxLayoutAlign="none center">
+    <div fxLayout="row">
+        <button mat-flat-button aria-label="icon-button with home icon">
+            <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
+        </button>
+        <button mat-flat-button aria-label="icon-button with people icon">
+            <mat-icon aria-hidden="false" aria-label="people icon">people</mat-icon>
+        </button>
+        <button mat-flat-button aria-label="icon-button with person icon">
+            <mat-icon aria-hidden="false" aria-label="person icon">person</mat-icon>
+        </button>
+        <button mat-flat-button aria-label="icon-button with more icon">
+            <mat-icon aria-hidden="false" aria-label="more icon">more_horiz</mat-icon>
+        </button>
+        <button mat-flat-button aria-label="icon-button with search icon">
+            <mat-icon aria-hidden="false" aria-label="search icon">search</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
