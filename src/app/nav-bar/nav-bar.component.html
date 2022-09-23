@@ -27,19 +27,21 @@
 </mat-toolbar>
 <mat-toolbar fxHide.gt-sm fxLayout="row" fxLayoutAlign="none center">
     <div fxLayout="row">
-        <button mat-flat-button aria-label="icon-button with home icon">
+        <button mat-flat-button aria-label="icon-button with home icon" #tooltip="matTooltip" matTooltip="Home">
             <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
         </button>
         <button mat-flat-button aria-label="icon-button with people icon">
-            <mat-icon aria-hidden="false" aria-label="people icon">people</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="people icon" #tooltip="matTooltip" matTooltip="Trustees">people
+            </mat-icon>
         </button>
-        <button mat-flat-button aria-label="icon-button with person icon">
+        <button mat-flat-button aria-label="icon-button with person icon" #tooltip="matTooltip"
+            matTooltip="Professionals">
             <mat-icon aria-hidden="false" aria-label="person icon">person</mat-icon>
         </button>
-        <button mat-flat-button aria-label="icon-button with more icon">
+        <button mat-flat-button aria-label="icon-button with more icon" #tooltip="matTooltip" matTooltip="More">
             <mat-icon aria-hidden="false" aria-label="more icon">more_horiz</mat-icon>
         </button>
-        <button mat-flat-button aria-label="icon-button with search icon">
+        <button mat-flat-button aria-label="icon-button with search icon" #tooltip="matTooltip" matTooltip="Search">
             <mat-icon aria-hidden="false" aria-label="search icon">search</mat-icon>
         </button>
     </div>
